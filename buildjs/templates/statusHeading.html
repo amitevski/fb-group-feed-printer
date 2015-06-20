@@ -1,0 +1,30 @@
+<a href="#" class="btn primary">Back</a>
+<h2>Status Messages</h2>
+
+<p>
+    Below you can see all posts in your group feed.
+    Creating this list can take a while depending on your feed size.
+</p>
+<p>
+    Hide Messages you don't want to print by pressing the "Hide" Button at
+    the beginning of the message.
+</p>
+<p>
+    Optionally Filter by Date
+<form class="form-stacked" method="post" action="#" onsubmit="return false;">
+        <fieldset>
+            
+            <label for="dateFrom">From</label>
+            <input id="dateFrom" name="dateFrom"  type="text" />
+            
+            <label for="dateTo">To</label>
+            <input id="dateTo" name="dateTo" type="text" />
+           <br /> 
+            <button id="filterButton" class="btn primary" type="submit">Filter</button>
+            <button id="resetButton" class="btn" type="reset">Reset</button>
+        </fieldset>
+    </form>
+</p>
+<p>
+    When you're done press following Print Button &rarr;
+<button class="btn primary large" onclick="window.print()">Print</button></p>

@@ -1,0 +1,1 @@
+define(["backbone"],function(e){var t=e.Model.extend({getId:function(){return this.get("id")},getType:function(){return this.get("type")}});return t});

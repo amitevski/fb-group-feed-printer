@@ -1,0 +1,35 @@
+<td class="message">
+    <button class="btn">hide</button>
+    <% if (from) {
+        print('<p><strong>'+from.name+'</strong><p>');
+    }
+    %>
+    <span>FBId: <%- id %></span>
+
+<p>
+    <%- message %>
+    <%
+        if (picture) {            
+            print('<p><img class="picture" src="'+ picture +'"></img></p>');
+        }
+     %>
+</p>
+<p> 
+    <%- created_time %>
+</p>
+    <%
+        if (comments && comments.data && comments.data.length > 0) {
+            print('<ul>');
+            for (var i = 0, len = comments.data.length; i < len; i++) {
+                print('<li>');
+                if (comments.data[i].from) {
+                    print('<p><strong>'+comments.data[i].from.name+'</strong></p>');
+                }
+                print('<p>'+comments.data[i].message+'</p>');
+                print('<p>'+comments.data[i].created_time+'</p>');
+                print('</li>');
+            }
+            print('<ul>');
+        }
+    %>
+</td>

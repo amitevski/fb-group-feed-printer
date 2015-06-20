@@ -1,0 +1,1 @@
+define(["backbone","underscore","jquery","models/group"],function(e,t,n,r){var i=e.Collection.extend({model:r});return new i});

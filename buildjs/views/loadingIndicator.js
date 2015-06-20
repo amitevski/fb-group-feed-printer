@@ -1,0 +1,1 @@
+define(["jquery","underscore"],function(e,t){var n={el:e("#loadingIndicator"),show:function(){this.el.show()},hide:function(){this.el.hide()}};return n});

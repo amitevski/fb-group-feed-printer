@@ -1,0 +1,1 @@
+define(["backbone","underscore","jquery","models/status"],function(e,t,n,r){var i=e.Collection.extend({model:r,filterDateBetween:function(e,n){return e=new Date(e),n=new Date(n),t(this.filter(function(t){var r=new Date;return r.setISO8601(t.get("created_time")),e<r&&r<n}))}});return new i});

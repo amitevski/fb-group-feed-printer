@@ -1,0 +1,10 @@
+#heading {
+    display: none;
+}
+p {
+    width: 700px;
+}
+
+:root .alert-message, :root .btn {
+    display: none;
+}

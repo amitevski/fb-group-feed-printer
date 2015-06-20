@@ -1,0 +1,14 @@
+@import url("jquery-ui-1.8.19.custom.css");
+
+.message,
+.message p{
+    width: 760px;
+}
+
+
+#loadingIndicator .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
